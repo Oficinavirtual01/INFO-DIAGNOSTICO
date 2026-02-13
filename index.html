@@ -15,53 +15,64 @@
   <body>
     <div class="container">
       <h1>Diagnóstico Automático - Estabilidad Delictiva</h1>
-      <p>Período: 1/1/2025 al 31/12/2026</p>
+      <p>Período: 30/1/2026 al 12/2/2026</p>
       
   <div class="header">Diagnóstico automático</div>
   <div style="border:1px solid #ddd;border-radius:10px;padding:12px;background:#fff;margin:10px 0;
               max-width:880px;margin-left:auto;margin-right:auto;">
-    <div style="display:grid;grid-template-columns:1.2fr 1fr;gap:14px;align-items:center;">
-      <div>
-        <div style="font-weight:700;font-size:14px;margin-bottom:4px;">Indicador de Estabilidad: Media</div>
-        <div style="font-size:12px;color:#555;line-height:1.35;">CV=17% | ID=5.44 | fuera de control: 2/7 (límites ~ 146.0–228.0)</div>
-      </div>
-      <div style="min-width:260px;position:relative;">
-        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:6px;">
+<div style="display:flex;flex-wrap:wrap;gap:14px;align-items:flex-start;">
+  <div style="flex:1 1 260px;min-width:220px;">
+    <div style="font-weight:700;font-size:14px;margin-bottom:4px;">Indicador de Estabilidad: Baja</div>
+    <div style="font-size:12px;color:#555;line-height:1.35;">CV=56% | ID=2.85 | fuera de control: 0/7 (límites ~ 0.0–18.0)</div>
+  </div>
+
+  <div style="flex:1 1 260px;min-width:220px;max-width:100%;position:relative;">
+    <div style="display:grid;grid-template-columns:repeat(4, minmax(0,1fr));gap:6px;">
+      
+        <div style="
+          background:#e53935;
+          color:#fff;border-radius:6px;padding:6px 6px;text-align:center;
+          border:1px solid rgba(0,0,0,.15);
+          font-size:12px; line-height:1.1;
+          white-space:nowrap;
+          box-shadow:0 0 0 2px #000 inset;font-weight:700;
+        ">Baja</div>
+      
+        <div style="
+          background:#f39c12;
+          color:#fff;border-radius:6px;padding:6px 6px;text-align:center;
+          border:1px solid rgba(0,0,0,.15);
+          font-size:12px; line-height:1.1;
+          white-space:nowrap;
           
-            <div style="
-              background:#e53935;
-              color:#fff;border-radius:6px;padding:6px 8px;text-align:center;
-              border:1px solid rgba(0,0,0,.15);
-              
-            ">Baja</div>
+        ">Media</div>
+      
+        <div style="
+          background:#43a047;
+          color:#fff;border-radius:6px;padding:6px 6px;text-align:center;
+          border:1px solid rgba(0,0,0,.15);
+          font-size:12px; line-height:1.1;
+          white-space:nowrap;
           
-            <div style="
-              background:#f39c12;
-              color:#fff;border-radius:6px;padding:6px 8px;text-align:center;
-              border:1px solid rgba(0,0,0,.15);
-              box-shadow:0 0 0 2px #000 inset;font-weight:700;
-            ">Media</div>
+        ">Alta</div>
+      
+        <div style="
+          background:#1e88e5;
+          color:#fff;border-radius:6px;padding:6px 6px;text-align:center;
+          border:1px solid rgba(0,0,0,.15);
+          font-size:12px; line-height:1.1;
+          white-space:nowrap;
           
-            <div style="
-              background:#43a047;
-              color:#fff;border-radius:6px;padding:6px 8px;text-align:center;
-              border:1px solid rgba(0,0,0,.15);
-              
-            ">Alta</div>
-          
-            <div style="
-              background:#1e88e5;
-              color:#fff;border-radius:6px;padding:6px 8px;text-align:center;
-              border:1px solid rgba(0,0,0,.15);
-              
-            ">Muy Alta</div>
-          
-        </div>
-        <div style="position:absolute;left:calc(37.5% - 8px);top:-10px;
-          width:0;height:0;border-left:8px solid transparent;border-right:8px solid transparent;
-          border-bottom:10px solid #424242;"></div>
-      </div>
+        ">Muy Alta</div>
+      
     </div>
+
+    <div style="position:absolute;left:calc(12.5% - 8px);top:-10px;
+      width:0;height:0;border-left:8px solid transparent;border-right:8px solid transparent;
+      border-bottom:10px solid #424242;"></div>
+  </div>
+</div>
+
     <div style="margin-top:8px;font-size:11px;color:#666;line-height:1.35;">
       <b>Método.</b> Coef. de Variación (CV), Índice de Dispersión (ID) y control Poisson (±3σ). 
       <em>CV</em>: variabilidad relativa; <em>ID≈1</em> sugiere patrón Poisson; “fuera de control” = días fuera de ±3σ.
@@ -69,40 +80,40 @@
   </div>
       
   <div class="header">Sugerencias del S.A.T</div>
-  <div style="border:1px solid #f39c12;border-left-width:6px;border-radius:10px;padding:16px 16px 12px;background:#fff9ee;margin:12px 0;">
+  <div style="border:1px solid #e53935;border-left-width:6px;border-radius:10px;padding:16px 16px 12px;background:#fff7f7;margin:12px 0;">
     <div style="display:flex;gap:14px;align-items:flex-start;flex-wrap:wrap;">
       <div style="flex:1;min-width:260px">
-        <div style="font-weight:700;font-size:15px;display:flex;align-items:center;gap:8px;color:#f39c12;">
+        <div style="font-weight:700;font-size:15px;display:flex;align-items:center;gap:8px;color:#e53935;">
           <span>🧭 Lectura</span>
         </div>
         <div style="margin-top:4px;font-size:13.5px;line-height:1.5;color:#2b2b2b;">
-          Existe variación moderada entre días; requiere seguimiento de picos y focalización en franjas y lugares de concentración.
+          Se observa irregularidad alta entre días; es necesario monitorear picos y valles, reforzar ventanas críticas y aplicar medidas situacionales.
         </div>
         <div style="margin-top:6px;font-size:13px;color:#1f2937;">
-          <b>Lo que significa que:</b> Riesgo intermedio: el patrón alterna picos y valles. Si coincide con eventos locales, puede escalar rápidamente.
+          <b>Lo que significa que:</b> Riesgo alto de sobresaltos. El patrón es errático: podría aparecer sobrecarga puntual si no se interviene.
         </div>
         <div style="margin-top:8px;font-size:12.5px;line-height:1.45;color:#374151;">
-          <b>Fundamento técnico:</b> Sustento: CV ≤35% y pocos días cercanos a ±3σ (dispersión creciente; sensible a shocks).<br>
-          <span style="color:#6b7280;">(Valores actuales: CV=17% | ID=5.44 | fuera de control: 2/7 (límites ~ 146.0–228.0))</span>
+          <b>Fundamento técnico:</b> Sustento: CV elevado y/o ID>1 con días cercanos o fuera de ±3σ (proceso menos estable).<br>
+          <span style="color:#6b7280;">(Valores actuales: CV=56% | ID=2.85 | fuera de control: 0/7 (límites ~ 0.0–18.0))</span>
         </div>
       </div>
 
       <div style="flex:1;min-width:260px;display:grid;grid-template-columns:1fr 1fr;gap:10px;">
         <div style="background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:8px;padding:10px;">
           <div style="font-size:12px;color:#555;margin-bottom:6px;"><b>Días destacados</b></div>
-          <span style="display:inline-block;padding:6px 10px;border-radius:999px;border:1px solid rgba(0,0,0,.08);background:#eef2ff;color:#1e3a8a;font-size:12px;margin:3px;">Martes</span> <span style="display:inline-block;padding:6px 10px;border-radius:999px;border:1px solid rgba(0,0,0,.08);background:#eef2ff;color:#1e3a8a;font-size:12px;margin:3px;">Miércoles</span>
+          <span style="display:inline-block;padding:6px 10px;border-radius:999px;border:1px solid rgba(0,0,0,.08);background:#eef2ff;color:#1e3a8a;font-size:12px;margin:3px;">Miércoles</span> <span style="display:inline-block;padding:6px 10px;border-radius:999px;border:1px solid rgba(0,0,0,.08);background:#eef2ff;color:#1e3a8a;font-size:12px;margin:3px;">Viernes</span> <span style="display:inline-block;padding:6px 10px;border-radius:999px;border:1px solid rgba(0,0,0,.08);background:#eef2ff;color:#1e3a8a;font-size:12px;margin:3px;">Martes</span>
         </div>
         <div style="background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:8px;padding:10px;">
           <div style="font-size:12px;color:#555;margin-bottom:6px;"><b>Rangos horarios</b></div>
-          <span style="display:inline-block;padding:6px 10px;border-radius:999px;border:1px solid rgba(0,0,0,.08);background:#eef2ff;color:#1e3a8a;font-size:12px;margin:3px;">🌆 Noche (18:00 - 23:59)</span> <span style="display:inline-block;padding:6px 10px;border-radius:999px;border:1px solid rgba(0,0,0,.08);background:#eef2ff;color:#1e3a8a;font-size:12px;margin:3px;">☀️ Tarde (12:00 - 17:59)</span>
+          <span style="display:inline-block;padding:6px 10px;border-radius:999px;border:1px solid rgba(0,0,0,.08);background:#eef2ff;color:#1e3a8a;font-size:12px;margin:3px;">🌆 Noche (18:00 - 23:59)</span> <span style="display:inline-block;padding:6px 10px;border-radius:999px;border:1px solid rgba(0,0,0,.08);background:#eef2ff;color:#1e3a8a;font-size:12px;margin:3px;">🌤️ Mañana (06:00 - 11:59)</span>
         </div>
         <div style="background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:8px;padding:10px;">
           <div style="font-size:12px;color:#555;margin-bottom:6px;"><b>Dependencias</b></div>
-          <span style="display:inline-block;padding:6px 10px;border-radius:999px;border:1px solid rgba(0,0,0,.08);background:#eef2ff;color:#1e3a8a;font-size:12px;margin:3px;">Cria_4</span> <span style="display:inline-block;padding:6px 10px;border-radius:999px;border:1px solid rgba(0,0,0,.08);background:#eef2ff;color:#1e3a8a;font-size:12px;margin:3px;">Cria_5</span> <span style="display:inline-block;padding:6px 10px;border-radius:999px;border:1px solid rgba(0,0,0,.08);background:#eef2ff;color:#1e3a8a;font-size:12px;margin:3px;">SC_ZIM</span>
+          <span style="display:inline-block;padding:6px 10px;border-radius:999px;border:1px solid rgba(0,0,0,.08);background:#eef2ff;color:#1e3a8a;font-size:12px;margin:3px;">Cria_5</span> <span style="display:inline-block;padding:6px 10px;border-radius:999px;border:1px solid rgba(0,0,0,.08);background:#eef2ff;color:#1e3a8a;font-size:12px;margin:3px;">Cria_34</span> <span style="display:inline-block;padding:6px 10px;border-radius:999px;border:1px solid rgba(0,0,0,.08);background:#eef2ff;color:#1e3a8a;font-size:12px;margin:3px;">Cria_2</span>
         </div>
         <div style="background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:8px;padding:10px;">
           <div style="font-size:12px;color:#555;margin-bottom:6px;"><b>Tipos de lugar</b></div>
-          <span style="display:inline-block;padding:6px 10px;border-radius:999px;border:1px solid rgba(0,0,0,.08);background:#eef2ff;color:#1e3a8a;font-size:12px;margin:3px;">Vía Pública</span> <span style="display:inline-block;padding:6px 10px;border-radius:999px;border:1px solid rgba(0,0,0,.08);background:#eef2ff;color:#1e3a8a;font-size:12px;margin:3px;">Domicilio</span> <span style="display:inline-block;padding:6px 10px;border-radius:999px;border:1px solid rgba(0,0,0,.08);background:#eef2ff;color:#1e3a8a;font-size:12px;margin:3px;">Interior taxi, Remis</span>
+          <span style="display:inline-block;padding:6px 10px;border-radius:999px;border:1px solid rgba(0,0,0,.08);background:#eef2ff;color:#1e3a8a;font-size:12px;margin:3px;">Vía Pública</span> <span style="display:inline-block;padding:6px 10px;border-radius:999px;border:1px solid rgba(0,0,0,.08);background:#eef2ff;color:#1e3a8a;font-size:12px;margin:3px;">Domicilio</span> <span style="display:inline-block;padding:6px 10px;border-radius:999px;border:1px solid rgba(0,0,0,.08);background:#eef2ff;color:#1e3a8a;font-size:12px;margin:3px;">Establecimiento Educativo</span>
         </div>
       </div>
     </div>
@@ -114,7 +125,7 @@
 
       <!-- LISTA ENUMERADA (esto faltaba) -->
       <ol style="margin:0 0 6px 18px;padding-left:18px;color:#2b2b2b;text-align:justify;">
-        <li style="margin:6px 0;font-size:13.5px;line-height:1.55;"><b>Refuerzo focal</b> en <b>Cria_4</b> durante <b>🌆 Noche (18:00 - 23:59)</b> con <b>patrullaje visible</b> y <b>contacto con referentes barriales</b>.</li><li style="margin:6px 0;font-size:13.5px;line-height:1.55;"><b>Prevención situacional</b> en <b>Vía Pública</b>: <b>iluminación</b>, <b>cierres</b>, <b>cámaras/vecinales</b> y <b>controles dinámicos</b>.</li><li style="margin:6px 0;font-size:13.5px;line-height:1.55;"><b>Alerta temprana</b>: si el <b>Martes</b> supera <b>±3σ</b>, <b>activar refuerzo por 48 h</b> e <b>intensificar supervisión</b>.</li><li style="margin:6px 0;font-size:13.5px;line-height:1.55;"><b>Coordinación operativa</b> para <b>retroalimentar modus operandi</b> y <b>ajustar cuadrantes/rutas</b>.</li><li style="margin:6px 0;font-size:13.5px;line-height:1.55;"><b>Comunicación</b> y <b>presencia selectiva</b> en <b>puntos calientes</b> para <b>disuasión temprana</b>.</li><li style="margin:6px 0;font-size:13.5px;line-height:1.55;"><b>Revisión</b> de <b>aprehensiones/causas recientes</b> para detectar <b>reincidencias</b> y <b>oportunidades investigativas</b>.</li>
+        <li style="margin:6px 0;font-size:13.5px;line-height:1.55;"><b>Refuerzo focal</b> en <b>Cria_5</b> durante <b>🌆 Noche (18:00 - 23:59)</b> con <b>patrullaje visible</b> y <b>contacto con referentes barriales</b>.</li><li style="margin:6px 0;font-size:13.5px;line-height:1.55;"><b>Prevención situacional</b> en <b>Vía Pública</b>: <b>iluminación</b>, <b>cierres</b>, <b>cámaras/vecinales</b> y <b>controles dinámicos</b>.</li><li style="margin:6px 0;font-size:13.5px;line-height:1.55;"><b>Alerta temprana</b>: si el <b>Martes</b> supera <b>±3σ</b>, <b>activar refuerzo por 48 h</b> e <b>intensificar supervisión</b>.</li><li style="margin:6px 0;font-size:13.5px;line-height:1.55;"><b>Coordinación operativa</b> para <b>retroalimentar modus operandi</b> y <b>ajustar cuadrantes/rutas</b>.</li><li style="margin:6px 0;font-size:13.5px;line-height:1.55;"><b>Comunicación</b> y <b>presencia selectiva</b> en <b>puntos calientes</b> para <b>disuasión temprana</b>.</li><li style="margin:6px 0;font-size:13.5px;line-height:1.55;"><b>Revisión</b> de <b>aprehensiones/causas recientes</b> para detectar <b>reincidencias</b> y <b>oportunidades investigativas</b>.</li>
       </ol>
 
       <div style="font-size:11.5px;color:#6b7280;margin-top:8px;">
@@ -127,31 +138,31 @@
     <div style="border:1px solid #ddd;border-radius:8px;padding:12px;background:#fff;margin:10px 0;">
       <div style="display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;">
       <div style="display:flex;flex-direction:column;align-items:center;gap:6px;">
-        <div title="Domingo: 145" style="width:40px;height:24px;border-radius:6px;background:hsl(77, 85%, 50%);border:1px solid rgba(0,0,0,0.08);"></div>
+        <div title="Domingo: 4" style="width:40px;height:24px;border-radius:6px;background:hsl(161, 85%, 50%);border:1px solid rgba(0,0,0,0.08);"></div>
         <div style="font-size:10px;color:#444;">Dom</div>
       </div>
       <div style="display:flex;flex-direction:column;align-items:center;gap:6px;">
-        <div title="Lunes: 186" style="width:40px;height:24px;border-radius:6px;background:hsl(39, 85%, 50%);border:1px solid rgba(0,0,0,0.08);"></div>
+        <div title="Lunes: 7" style="width:40px;height:24px;border-radius:6px;background:hsl(124, 85%, 50%);border:1px solid rgba(0,0,0,0.08);"></div>
         <div style="font-size:10px;color:#444;">Lun</div>
       </div>
       <div style="display:flex;flex-direction:column;align-items:center;gap:6px;">
-        <div title="Martes: 229" style="width:40px;height:24px;border-radius:6px;background:hsl(0, 85%, 50%);border:1px solid rgba(0,0,0,0.08);"></div>
+        <div title="Martes: 9" style="width:40px;height:24px;border-radius:6px;background:hsl(99, 85%, 50%);border:1px solid rgba(0,0,0,0.08);"></div>
         <div style="font-size:10px;color:#444;">Mar</div>
       </div>
       <div style="display:flex;flex-direction:column;align-items:center;gap:6px;">
-        <div title="Miércoles: 214" style="width:40px;height:24px;border-radius:6px;background:hsl(14, 85%, 50%);border:1px solid rgba(0,0,0,0.08);"></div>
+        <div title="Miércoles: 17" style="width:40px;height:24px;border-radius:6px;background:hsl(0, 85%, 50%);border:1px solid rgba(0,0,0,0.08);"></div>
         <div style="font-size:10px;color:#444;">Mié</div>
       </div>
       <div style="display:flex;flex-direction:column;align-items:center;gap:6px;">
-        <div title="Jueves: 155" style="width:40px;height:24px;border-radius:6px;background:hsl(68, 85%, 50%);border:1px solid rgba(0,0,0,0.08);"></div>
+        <div title="Jueves: 9" style="width:40px;height:24px;border-radius:6px;background:hsl(99, 85%, 50%);border:1px solid rgba(0,0,0,0.08);"></div>
         <div style="font-size:10px;color:#444;">Jue</div>
       </div>
       <div style="display:flex;flex-direction:column;align-items:center;gap:6px;">
-        <div title="Viernes: 210" style="width:40px;height:24px;border-radius:6px;background:hsl(17, 85%, 50%);border:1px solid rgba(0,0,0,0.08);"></div>
+        <div title="Viernes: 14" style="width:40px;height:24px;border-radius:6px;background:hsl(37, 85%, 50%);border:1px solid rgba(0,0,0,0.08);"></div>
         <div style="font-size:10px;color:#444;">Vie</div>
       </div>
       <div style="display:flex;flex-direction:column;align-items:center;gap:6px;">
-        <div title="Sábado: 170" style="width:40px;height:24px;border-radius:6px;background:hsl(54, 85%, 50%);border:1px solid rgba(0,0,0,0.08);"></div>
+        <div title="Sábado: 3" style="width:40px;height:24px;border-radius:6px;background:hsl(173, 85%, 50%);border:1px solid rgba(0,0,0,0.08);"></div>
         <div style="font-size:10px;color:#444;">Sáb</div>
       </div></div>
       <div style="margin-top:8px;font-size:11px;color:#666;text-align:center;">
